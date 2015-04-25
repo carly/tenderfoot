@@ -2,8 +2,8 @@ Meteor.startup(function () {
 
     // New Post RSS
 
-    Router.route('/feed.xml', function () {
-      this.response.write(servePostRSS('new', 'feed.xml'));
+    Router.route('http://www.disunplugged.com/podcast.xml', function () {
+      this.response.write(servePostRSS('new', 'http://www.disunplugged.com/podcast.xml'));
       this.response.end();
     }, {
       name: 'feed',
